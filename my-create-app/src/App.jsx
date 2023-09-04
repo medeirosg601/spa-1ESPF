@@ -1,8 +1,12 @@
 import Cabeçalho from "./components/cabecalho"
 import Conteudo from "./components/Conteudo"
 import Rodapé from "./components/Rodape"
+import vitelogo from "./assets/vite.svg"
 
-export default function App9(){
+export default function App(){
+
+  let vitelogoAlt = "Vite logo"
+
   return(
     <>
     <h1>APP</h1>
@@ -11,7 +15,8 @@ export default function App9(){
       <Cabeçalho/>
       
       {/* Iniciando a área de conteúdo */}
-     <Conteudo/>
+     <Conteudo vitelogoProps={vitelogo} 
+     vitelogoAltProps={vitelogoAlt} />
       {/* Iniciando a área de rodapé*/}
       <Rodapé/>
 
